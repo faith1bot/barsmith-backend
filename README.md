@@ -13,12 +13,51 @@ BART Smith Backend API - Node.js/Express server for AI-powered rap lyric generat
 
 ## Quick Start
 
-### Prerequisites
+15
+
 
 - Node.js >= 18.0.0
 - npm or yarn
 - Gemini API Key (from Google AI Studio)
 - ElevenLabs API Key (from elevenlabs.io)
+
+- ## Important: API Keys Required
+
+- **BARSMITH is a public open-source project, but you must provide your own API keys to use it.**
+
+- This project does NOT include or store any API credentials. Each user must get their own keys:
+
+- ### 1. Gemini API Key (Free)
+
+- Go to [Google AI Studio](https://aistudio.google.com)
+- Create a new project
+- Get your free API key (no credit card required)
+- Free tier: Unlimited requests
+- After free tier: ~$0.00075 per request
+
+### 2. ElevenLabs API Key (Free)
+
+- Go to [ElevenLabs](https://www.elevenlabs.io)
+- Sign up for a free account
+- Get your API key in settings
+- Free tier: 10,000 characters/month
+- Clone your voice: Record 5-10 seconds of audio
+- Use voice ID for custom audio
+
+### Security
+
+- `.env` files are **NEVER** committed to git (see `.gitignore`)
+- Your API keys are personal credentials
+- Always use `.env.example` as a template
+- Never share your API keys
+
+### Costs
+
+You only pay for what you use:
+- **Gemini**: Free tier is very generous, then ~$0.08 per 1M input tokens
+- **ElevenLabs**: Free tier 10K characters/month, then ~$0.30 per 1M characters
+
+Both services have excellent free tiers for development and testing.
 
 ### Installation
 
